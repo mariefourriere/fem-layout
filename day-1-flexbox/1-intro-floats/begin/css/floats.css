@@ -32,12 +32,116 @@ div img {
 
 /* grid system -- mobile first! */
 
+[class*="col-"]{
+	float:left;
+	margin-top: 10px;
+	width: 92%;
+	margin-left: 4%;
+}
+
+[class*="row-"]{
+	display: table;
+	clear: both;
+}
+.col-1{
+	background-color: lightcyan;
+}
+.col-2{
+	background-color:lightgoldenrodyellow;
+}
+.col-3, .col-3a{
+	background-color:lightgrey;
+}
+.col-4{
+background-color: lightcoral;
+}
+
 
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
-
+	[class*="col-"]{
+		float:left;
+		margin-top: 10px;
+	}
+	
+	[class*="row-"]{
+		display: table;
+		clear: both;
+	}
+	
+	.col-1{
+		width: 44%;
+		margin-left: 4%;
+		background-color: lightblue;
+	}
+	
+	.col-2{	
+		width: 44%;
+		margin-left: 4%;
+		background-color: lightgoldenrodyellow;
+	}
+	
+	.col-3{	
+		width: 92%;
+		margin-left: 4%;
+		background-color: lightgrey;
+	}
+	.col-3a{	
+		width: 92%;
+		margin-left: 4%;
+		background-color: lightgrey;
+	}
+	
+	.col-4{
+		width: 92%;
+		float: auto;
+		margin-left: 4%;
+		background-color: lightcoral;	
+	}
+	
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
+[class*="col-"]{
+	float:left;
+	margin-top: 10px;
+}
+
+[class*="row-"]{
+	display: table;
+	clear: both;
+}
+
+.col-1{
+	width: 20%;
+	margin-left: 4%;
+	background-color: lightblue;
+}
+
+.col-2{	
+	width: 44%;
+	margin-left: 4%;
+	background-color: lightgoldenrodyellow;
+}
+
+.col-3{	
+	width: 68%;
+	margin-left: 4%;
+	background-color: lightgrey;
+}
+.col-3a{	
+	width: 20%;
+	margin-left: 4%;
+	background-color: lightgrey;
+}
+
+.col-4{
+	width: 92%;
+	float: auto;
+	margin-left: 4%;
+	background-color: lightcoral;	
+}
+
+
 
 }
