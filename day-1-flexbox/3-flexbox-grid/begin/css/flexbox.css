@@ -54,6 +54,18 @@ div img {
 .col-3a, .col-4{
 	background-color: lightgreen;
 }
+.col-5a{
+	order:2;
+	background-color: lightpink;
+}
+.col-5b{
+	order:1;
+	background-color: lightpink;
+}
+.col-5c{
+	order: 3;
+	background-color: lightpink;
+}
 
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
@@ -76,6 +88,23 @@ div img {
 		flex: 0 0 92%;
 		background-color: lightgrey;
 	}
+	.col-5a{
+		flex: 0 0 92%;
+		order:1;
+		background-color: lightpink;
+	}
+	.col-5b{
+		flex: 0 0 44%;
+		flex-wrap: wrap;
+		order:2;
+		background-color: lightpink;
+	}
+	.col-5c{
+		flex: 0 0 44%;
+		order: 3;
+		background-color: lightpink;
+	}
+	
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
@@ -102,5 +131,23 @@ div img {
 		flex: 0 0 92%;
 		background-color: lightgrey;
 	}
-
+	.col-5a{
+		flex: 0 0 20%;
+		background-color: lightpink;
+	}
+	.col-5b{
+		flex: 0 0 44%;
+		background-color: lightpink;
+	}
+	.col-5c{
+		flex: 0 0 20%;
+		background-color: lightpink;
+	}
+	.reverse{
+		flex-direction: row-reverse;
+		margin: 0%;
+		margin-left: -4%;
+		margin-right: 4%;
+		
+	}
 }
